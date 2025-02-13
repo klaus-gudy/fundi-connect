@@ -32,7 +32,7 @@ export function DashboardSidebar() {
       href: "/dashboard",
     },
     {
-      title: "Skills & Certifications",
+      title: "Skills & Assesments",
       icon: GraduationCap,
       href: "/skills",
     },
@@ -49,7 +49,7 @@ export function DashboardSidebar() {
     {
       title: "Job Board",
       icon: Building2,
-      href: "/jobs",
+      href: "/job-board",
     },
     {
       title: "Messages",
