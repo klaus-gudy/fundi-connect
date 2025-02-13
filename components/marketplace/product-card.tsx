@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { MapPin, Star } from "lucide-react"
+import placeholder from "@/public/placeholder.png"
+import Image from "next/image"
 
 interface Product {
   id: number
@@ -21,8 +23,8 @@ export function ProductCard({ product }: ProductCardProps) {
   return (
     <Card className="overflow-hidden">
       <CardHeader className="p-0">
-        <div className="aspect-square relative">
-          <img src={product.image || "/placeholder.svg"} alt={product.name} className="object-cover w-full h-full" />
+        <div className="aspect-video relative">
+          <Image src={product.image} alt={product.name} className="object-cover w-full h-full" width={5000} height={3000} />
           <div className="absolute top-2 right-2 bg-background/80 text-foreground px-2 py-1 rounded-full text-sm font-medium">
             {product.category}
           </div>

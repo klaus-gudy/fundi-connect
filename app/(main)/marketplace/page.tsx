@@ -1,3 +1,4 @@
+'use client'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
@@ -12,7 +13,7 @@ const products = [
     description: "Handcrafted oak dining table",
     price: 250000,
     category: "Carpentry",
-    image: "/placeholder.svg?height=200&width=200",
+    image: "https://cdn.usegalileo.ai/sdxl10/81a94fd9-0e12-4821-b1a5-964f0d76b152.png",
     rating: 4.5,
     location: "Dar es Salaam",
   },
@@ -22,7 +23,7 @@ const products = [
     description: "Expert plumbing repairs and installations",
     price: 50000,
     category: "Plumbing",
-    image: "/placeholder.svg?height=200&width=200",
+    image: "https://cdn.usegalileo.ai/sdxl10/859f200e-036e-4885-8ee7-c854b6b58f8a.png",
     rating: 4.2,
     location: "Arusha",
   },
@@ -32,7 +33,7 @@ const products = [
     description: "Professional electrical services for homes and businesses",
     price: 75000,
     category: "Electrical",
-    image: "/placeholder.svg?height=200&width=200",
+    image: "https://cdn.usegalileo.ai/sdxl10/42711b84-4aac-4d66-a1e3-66631f4c72aa.png",
     rating: 4.8,
     location: "Mwanza",
   },
@@ -43,16 +44,15 @@ export default function MarketplacePage() {
   return (
     <div className="flex-1 space-y-4 p-4 md:p-8 pt-6">
       <div className="flex items-center justify-between space-y-2">
-        <h2 className="text-3xl font-bold tracking-tight">Marketplace</h2>
-        <Button>List a Product/Service</Button>
+        <h2 className="text-xl font-bold tracking-tight">Marketplace</h2>
       </div>
 
       <div className="flex flex-col md:flex-row gap-4">
         <div className="w-full md:w-64 space-y-4">
           <div className="flex items-center space-x-2">
-            <Input placeholder="Search..." />
+            <Input placeholder="Search" />
             <Button size="icon" variant="outline">
-              <Search className="h-4 w-4" />
+              <Search className="h-5 w-5" />
             </Button>
           </div>
           <Select>
