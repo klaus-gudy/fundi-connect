@@ -72,7 +72,6 @@ export function DashboardSidebar() {
     <Sidebar>
       <SidebarHeader className="border-b p-4">
         <Link href="/dashboard" className="flex items-center gap-2 font-semibold">
-          <img src="/placeholder.svg?height=32&width=32" alt="FundiConnect Logo" className="h-8 w-8" />
           <span>FundiConnect</span>
         </Link>
       </SidebarHeader>
@@ -92,7 +91,7 @@ export function DashboardSidebar() {
       </SidebarContent>
       <SidebarFooter className="border-t p-4">
         <div className="flex items-center gap-2">
-          <img src="/placeholder.svg?height=32&width=32" alt="User Avatar" className="h-8 w-8 rounded-full" />
+          <img src="https://github.com/shadcn.png" alt="User Avatar" className="h-8 w-8 rounded-full" />
           <div className="flex flex-col">
             <span className="text-sm font-medium">John Doe</span>
             <span className="text-xs text-muted-foreground">Artisan</span>
